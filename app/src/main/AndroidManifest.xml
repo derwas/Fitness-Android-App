@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mallannius.fitnessgps">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCbeocnSLSnSKFtxxte3tvYwRIEhERVQNE"/>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginPage">
+        </activity>
+
+        <activity android:name=".Registration">
+        </activity>
+
+        <activity android:name=".Menu">
+        </activity>
+
+        <activity android:name=".Recordingmode"
+                android:configChanges="keyboardHidden|orientation|screenSize">
+            >
+        </activity>
+        <activity android:name=".Searchjourney">
+        </activity>
+        <activity android:name=".Database">
+        </activity>
+        <activity android:name=".Statsresult1">
+        </activity>
+        <activity android:name=".Statsresult2">
+        </activity>
+        <activity android:name=".Statsresult3">
+        </activity>
+        <activity android:name=".showMap">
+        </activity>
+    </application>
+
+</manifest>
